@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+
+        <style>
+        	.topright {
+                display:flex;
+        		position: absolute;
+        		top: 8px;
+        		right: 16px;
+        		height: 200px;
+        	}
+
+        	.center {
+        		margin: auto;
+        		width: 50%;
+        		padding: 100px;
+        	}
+
+        	.rounded {
+        		display: inline;
+        		width: 300px;
+                padding: 50px;
+                margin: 0px;
+        	}
+
+            .box {
+                float: right;
+                width: 70%;
+            }
+
+        	.son {
+        		display: flex;
+        		position: relative;
+        		margin: auto;
+        	}
+
+        	.botoncito {
+        		display: flex;
+        		position: relative;
+        		margin: auto;
+        		background-color: blue;
+        		color: white;
+        	}
+
+            a:link {
+                color:black;
+                text-decoration:none;
+                font-family: sans-serif;
+                font-size:13px;
+            }
+
+
+            a:visited {
+                color:black;
+                text-decoration:none;
+                font-family: sans-serif;
+                font-size:13px;
+
+            }
+
+            a:hover {
+                text-decoration:underline;
+            }
+
+            a {
+                padding-top:12px;
+                padding-left:6px;
+                padding-bottom:12px;
+                padding-right:12px;
+            }
+
+            .task {
+                font-size:  18px;
+            }
+
+            input:hover {
+                border-color: #0066ff;
+            }
+
+        </style>
+    </head>
+    <body>
+    	<nav>
+    		<div class="topright">
+    			<a href="index.html">Volver atrás</a>
+    		</div>
+    	</nav>
+    	<div class="center">
+            <div class="rounded">
+	        <form action="https://google.com/search">
+	        	<p class="task">Mostrar páginas que<br> contengan...</p><br>
+	            <div>todas estas palabras:  <input type="text" name="as_q" class="box"></div><br>
+	            <div>esta palabra o frases exactas:  <input type="text" name="as_epq" class="box"></div><br>
+	            <div>cualquiera de estas palabras:  <input type="text" name="as_oq" class="box"></div><br>
+	            <div>ninguna de estas palabras:  <input type="text" name="as_eq" class="box"></div><br>
+	            <input type="submit" value="Búsqueda avanzada" class="botoncito">
+	        </form>
+        </div>
+	    </div>
+    </body>
+</html>

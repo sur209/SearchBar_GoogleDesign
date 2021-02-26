@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Search</title>
+        <style>
+        	.topright {
+        		display: flex;
+        		position: absolute;
+        		top: 8px;
+        		right: 16px;
+        		height: 200px;
+        	}
+
+        	.center {
+        		margin: auto;
+        		width: 50%;
+        		padding: 170px 0;
+        		text-align:center;
+        	}
+
+        	.rounded {
+        		display: flex;
+        		margin: auto;
+        		width: 50%;
+        		border-radius: 5px;
+        	}
+
+        	.son {
+        		display: inline-block;
+        		position: relative;
+        		margin: auto;
+        	}
+
+        	a:link {
+        		color:black;
+        		text-decoration:none;
+        		font-family: sans-serif;
+        		font-size:13px;
+        	}
+
+        	a:visited {
+        		color:black;
+        		text-decoration:none;
+        		font-family: sans-serif;
+        		font-size:13px;
+
+        	}
+
+        	a:hover {
+ 				text-decoration:underline;
+        	}
+
+        	a {
+        		padding-top:12px;
+        		padding-left:6px;
+        		padding-bottom:12px;
+        		padding-right:12px;
+        	}
+
+        </style>
+    </head>
+    <body>
+    	<nav>
+    		<div class="topright">
+    			<a href="images.html">Imágenes</a>
+    			&nbsp;&nbsp;&nbsp;
+    			<a href="advanced.html">Búsqueda avanzada</a>
+    		</div>
+    	</nav>
+
+    	<div class="center">
+        <img src="https://www.google.com.ar/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" style="max-width:100%;height:auto;">
+        <br><br>
+        <form action="https://google.com/search">
+
+            	<input type="text" name="q" class="rounded">
+                
+       	    	<input type="submit" value="Buscar con Google" class="son">
+       	    	<input name="btnI" type="submit" value="Me siento con suerte" class="son">
+
+
+        </form>
+        </div>
+
+    </body>
+</html>
